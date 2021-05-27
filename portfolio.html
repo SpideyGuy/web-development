@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>My personal portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        .item-grid img {
+            box-shadow: 20px 20px 30px rgb(0 0 0 / 30%);
+            /* border: 5px solid red; */
+            border-radius: 0px 120px 0px 120px;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        .btn{
+            padding: 8px 10px;
+        }
+
+        #big-letter{
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 12px;
+        }
+        
+        p#details{
+            margin-top: 24px;
+        }
+
+        /* phone */
+        @media only screen and (max-width: 600px) {
+            button {
+                font-size: 42px;
+                margin: 20px;
+            }
+
+            .item-grid img {
+                border-radius: 0px;
+            }
+            .card-info{
+                margin-top: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 item-grid">
+                <!-- <h1>This is the heading for Image</h1> -->
+                <img src="https://source.unsplash.com/400x466/?human,%20potrait" />
+            </div>
+            <div class="col-sm-12 col-md-8 item-grid card-info mt-5">
+                <h2>John Doe</h2>
+                <h5>Student</h5>
+                <p id="details"><span id="big-letter">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like
+                    Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <a class="btn btn-primary" href="CV.pdf" target="_blank">View CV</a>
+                <a class="btn btn-success" href="CV.pdf" download="CV">Direct Download CV</a>
+                <a class="btn btn-info" href="mailto:bijayraizn@gmail.com">Email Me</a>
+                <a class="btn btn-secondary" href="tel:9841234567">Call Us: 9841234567</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            #pos-abs{
+                position: absolute;
+                top: 40px;
+                width: 240px;
+                height: 120px;
+                background-color: red;
+            }
+            #pos-rel{
+                position: relative;
+                left: 80px;
+                width: 480px;
+                height: 240px;
+                background-color: blue;
+            }
+            #pos-sticky{
+                position: sticky;
+                padding: 40px 30px;
+                top: 10px;
+                z-index: 9;
+                background-color: indianred;
+            }
+            button#btn_call{
+                background-color: bisque;
+                color: gray;
+                padding: 10px 20px;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pos-sticky">
+            <p>This is sticky paragraph</p>
+        </div>
+        <div>
+            <p>This is for body example</p>
+        </div>
+        <div id="pos-rel">
+            <p>This is my first paragraph</p>
+            <div id="pos-abs">
+                <h1>This is Heading Element</h1>
+            </div>
+        </div>
+        <div id="pos-rel">
+            <p>This is my first paragraph</p>
+            <div id="pos-abs">
+                <h1>This is Heading Element</h1>
+            </div>
+        </div>
+        <div id="pos-rel">
+            <p>This is my first paragraph</p>
+            <div id="pos-abs">
+                <h1>This is Heading Element</h1>
+            </div>
+        </div>
+        <div id="pos-rel">
+            <p>This is my first paragraph</p>
+            <div id="pos-abs">
+                <h1>This is Heading Element</h1>
+            </div>
+        </div>
+        <div id="pos-rel">
+            <p>This is my first paragraph</p>
+            <div id="pos-abs">
+                <h1>This is Heading Element</h1>
+            </div>
+        </div>
+        <button id="btn_call">Call Me</button>
+    </body>
+</html>

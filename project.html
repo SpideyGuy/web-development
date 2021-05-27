@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>My personal portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 1200px;
+        }
+
+        .item-grid {
+            padding: 30px;
+            /* background-color: red!important; */
+        }
+
+        .item-grid img {
+            box-shadow: 20px 20px 30px rgb(0 0 0 / 30%);
+            /* border: 5px solid red; */
+            border-radius: 0px 120px 0px 120px;
+        }
+
+        .card-info {
+            border: 1px solid black;
+            transition: 0.3s;
+            border-radius: 50px;
+            /* background-color: blue; */
+        }
+
+        .card-info:hover {
+            box-shadow: 20px 20px 30px rgb(0 0 0 / 30%);
+            border: unset;
+            transition: 0.3s;
+        }
+
+        .item-grid h2 {
+            font-size: 30px;
+            margin: 10px 0px 18px 0px;
+            /* text-shadow: 2px 2px 4px #0182ff; */
+        }
+
+        .item-grid h5 {
+            font-size: 26px;
+            margin: 10px 0px;
+        }
+
+        .item-grid p {
+            font-size: 24px;
+        }
+
+        .p-1 {
+            display: inline;
+        }
+
+        /* phone */
+        @media only screen and (max-width: 600px) {
+            .container-grid {
+                grid-template-columns: unset;
+            }
+
+            .container-grid h2 {
+                font-size: 52px;
+            }
+
+            .container-grid h5 {
+                font-size: 48px;
+            }
+
+            .container-grid p {
+                font-size: 40px;
+            }
+
+            button {
+                font-size: 42px;
+                margin: 20px;
+            }
+
+            .item-grid img {
+                border-radius: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-grid">
+        <div class="item-grid">
+            <!-- <h1>This is the heading for Image</h1> -->
+            <img src="https://source.unsplash.com/600x466/?human,%20potrait" />
+        </div>
+        <div class="item-grid card-info">
+            <h2>John Doe</h2>
+            <h5>Student</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into
+                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <button>Download CV</button>
+            <button>Email Me</button>
+        </div>
+    </div>
+</body>
+
+</html>
